@@ -1,0 +1,24 @@
+body {
+	background: #BDBDBD;
+	font-family: "Segoe UI";
+}
+
+h1 {
+	font-weight: 300;
+}
+
+ul {
+	list-style: none;
+	font-size: 12pt;
+	line-height: 2em;
+	padding: 0;
+}
+
+p, .jumbotron p {
+	font-size: 12pt;
+}
+
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}

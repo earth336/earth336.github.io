@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>EARTH 336 - Coelophysis</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/ico" href="favicon.ico" sizes="16x16">
+    </head>
+<body>
+
+<!-- Scroll Spy for fixed navbar -->
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<!-- Inverse top-fixed navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>        
+            </button>
+        </div>
+        <div class = "collapse navbar-collapse" id="navHeaderCollapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#about" class="page-scroll">Coelophysis</a></li>
+                <li><a href="#environment" class="page-scroll">Environment</a></li>
+                <li><a href="#diet" class="page-scroll">Diet</a></li> 
+                <li><a href="#morphology" class="page-scroll">Morphology</a></li> 
+                <li><a href="#phylogeny" class="page-scroll">Phylogeny</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+<!-- About Me section -->
+<div class="container" style="margin-top:50px;" id="about">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h1 class="text-center" style="margin-top:100px;">Coelophysis</h1>
+        </div>
+        <div class="col-md-6 text-center">
+            <h1 class="text-center"><img src="images/main.jpg" class="img-rounded" width="400" height="200"></h1>
+        </div>
+    </div>
+    <p>Filler text</p>
+</div>
+    
+<!-- Environment section -->
+<div class="container" id="environment">
+    <div class="jumbotron">
+        <h1 class="text-center" style="font-size:28pt; margin-top:-10px;">Environment</h1>
+    </div>
+</div>
+<!-- Diet section -->
+<div class="container" id="diet">
+    <div class="jumbotron">
+        <h1 class="text-center" style="font-size:28pt; margin-top:-10px;">Diet</h1>
+    </div>    
+</div>
+        
+<!-- Morphology section -->
+<div class="container" id="morphology">
+    <div class="jumbotron">
+        <h1 class="text-center" style="font-size:28pt; margin-top:-10px;">Morphology</h1>
+    </div>
+</div>
+    
+<!-- Phylogeny section -->
+<div class="container" id="phylogeny">
+    <div class="jumbotron">
+        <h1 class="text-center" style="font-size:28pt; margin-top:-10px;">Phylogeny</h1>
+    </div>
+</div>
+    
+<!-- Sources section -->
+<div class="container" id="sources">
+    <div class="jumbotron">
+        <h1 class="text-center" style="font-size:28pt; margin-top:-10px;">Sources</h1>
+    </div>
+</div>
+    
+<!-- Footer area -->
+<nav class="navbar navbar-inverse navbar-default-bottom">    
+    <div class="container-fluid">
+        <p class="text-center" style="margin-top: 14px"><span style="color:#fff">Ajay Mistry, Darren Chan, Meyya Muthu, Rehnoma Khandaker, 2018</span></p>
+    </div>
+</nav>
+    
+<!-- JS scripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Smoothscroll -->
+<script>
+$(function() {
+	var scrollers = $("html, body");
+
+	scrollers.on("mousewheel", function() {
+		scrollers.stop();
+	});
+
+	$('a[href*="#"]:not([href="#"])').click(function() {
+		var target = this.hash;
+		target = target.length ? $(target) : $('[name=' + this.hash.slice(1) +']');
+		if (target.length) {
+			scrollers.stop();
+			scrollers.animate({
+				scrollTop: target.offset().top - 60
+			}, 1000);
+			$("#navHeaderCollapse").collapse("hide");
+			return false;
+		}
+	});
+});
+</script>
+
+</body>
+</html>
+
