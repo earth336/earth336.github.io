@@ -16,6 +16,7 @@ ul {
 
 p, .jumbotron p {
 	font-size: 12pt;
+	font-weight: 400;
 }
 
 .navbar {
