@@ -1,10 +1,14 @@
 body {
-	background: #BDBDBD;
+	background: #FBC02D;
 	font-family: "Segoe UI";
 }
 
 h1 {
 	font-weight: 300;
+}
+
+.jumbotron {
+    background: #FFCA28;
 }
 
 ul {
