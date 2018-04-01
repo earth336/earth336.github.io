@@ -1,5 +1,5 @@
 body {
-	background: #FBC02D;
+	background: #9DA0B1;
 	font-family: "Segoe UI";
 }
 
@@ -8,7 +8,25 @@ h1 {
 }
 
 .jumbotron {
-    background: #FFCA28;
+    background: #ECECEC;
+}
+
+.container-fluid {
+    background-color: #22315D;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #FFFFFF;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #101830;
+}
+
+.navbar-inverse {
+    background-color: #22315D;
+    border-color: #080808;
 }
 
 ul {
